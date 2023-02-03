@@ -21,14 +21,7 @@ class Booklist extends Component {
                 if (getBookResultById) {
                     this.setState({ bookList: getBookResultById.data });
                 }
-            } else if (this.props.match.params.categoryId && this.props.match.params.categoryId === 'all') {
-                let getAllBookResult = getAllBook();
-
-                if (getAllBookResult) {
-                    this.setState({ bookList: getAllBookResult.data });
-                }
-            } else if (this.props.match.params.categoryId === undefined) {
-                console.log('start');
+            } else {
                 let getAllBookResult = getAllBook();
 
                 if (getAllBookResult) {

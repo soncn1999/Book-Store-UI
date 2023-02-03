@@ -21,12 +21,10 @@ class Homepage extends Component {
             if (this.props.match.params.categoryId) {
                 this.setState({
                     showList: true,
-                    categoryId: this.props.match.params.categoryId
                 })
-            } else if (this.props.match.params.id) {
+            } else if (this.props.match.params.bookId) {
                 this.setState({
                     showList: false,
-                    bookId: this.props.match.params.bookId,
                 })
             }
         }
@@ -37,8 +35,6 @@ class Homepage extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log("book id: " + nextProps.match.params.bookId);
-        console.log("category id: " + nextProps.match.params.categoryId);
         if (this.props.match && this.props.match.params) {
 
             if (nextProps.match.params.bookId) {
@@ -56,7 +52,7 @@ class Homepage extends Component {
 
     render() {
         const { showList } = this.state;
-        console.log('show List: ' + showList);
+
         return (
             <Fragment>
                 <Header />

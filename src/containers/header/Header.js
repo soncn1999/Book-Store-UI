@@ -24,7 +24,7 @@ class Header extends Component {
                 <div className="header-content-left">
                     <div className="header-content-left__logo"></div>
                     <div className="header-content-left__brand">
-                        <a href="#">BookStore</a>
+                        <a href="/">BookStore</a>
                     </div>
                 </div>
                 <div className="header-conten-right">

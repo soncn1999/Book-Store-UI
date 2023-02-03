@@ -106,7 +106,8 @@ const bookList = [
 
 const getAllCategory = () => {
     return {
-        status: 1,
+        errCode: 1,
+        status: 'OK',
         data: categoryList
     };
 }
@@ -117,14 +118,17 @@ const getBookByCategoryId = (categoryId) => {
     });
 
     return {
-        status: 1,
+        errCode: 1,
+        status: 'OK',
         data: bookFiltering
     };
+
 }
 
 const getAllBook = () => {
     return {
-        status: 1,
+        errCode: 1,
+        status: 'OK',
         data: bookList,
     };
 }
@@ -134,7 +138,8 @@ const getBookById = (id) => {
         return book.id === +id;
     });
     return {
-        status: 1,
+        errCode: 1,
+        status: 'OK',
         data: bookFinding
     }
 }

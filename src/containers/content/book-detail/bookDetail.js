@@ -24,6 +24,10 @@ class bookDetail extends Component {
 
     }
 
+    componentWillReceiveProps(nextProps) {
+
+    }
+
     render() {
         const { detailBookResult } = this.state;
 
