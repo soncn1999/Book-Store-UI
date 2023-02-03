@@ -1,0 +1,28 @@
+.content__left {
+    flex: 1;
+    box-shadow: 5px -4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    &-category {
+        padding: 10px 20px;
+        &-title {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    }
+    &-list {
+    }
+    &-item {
+        padding: 10px 20px;
+        font-size: 16px;
+        list-style-type: none;
+        &:hover {
+            background-color: #ccc;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    }
+}
+
+.cross-line--sidebar-spacing {
+    padding-top: 15px;
+}
