@@ -37,7 +37,7 @@ class bookDetail extends Component {
                     <div className="book-detail-info">
                         <div className="book-detail-info__cover"></div>
                         <div className="book-detail-info__desc">
-                            <div className="book-detail-info__desc-name">{detailBookResult && detailBookResult.name}</div>
+                            <div className="book-detail-info__desc-name">{detailBookResult && `${detailBookResult.name} ${detailBookResult.id}`}</div>
                             <div className="book-detail-info__desc-author">Tác giả: {detailBookResult && detailBookResult.author}</div>
                             <div className="book-detail-info__desc-publisher">Nhà xuất bản: {detailBookResult && detailBookResult.source}</div>
                         </div>
